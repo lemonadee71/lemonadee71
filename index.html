@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <title>Portfolio</title>
+  </head>
+  <body class="">
+    <div class="drawer drawer-end">
+      <input id="menu-items" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col">
+        <!-- Navbar -->
+        <header class="w-full h-16 navbar bg-base-300 lg:px-10">
+          <div class="flex-1 px-2 mx-2">
+            <p class="font-bold text-2xl text-white tracking-wide">
+              <span class="text-yellow-400">&lt;</span>
+              <span class="font-poppins">test</span>
+              <span class="text-yellow-400">/&gt;</span>
+            </p>
+          </div>
+          <div class="flex-none lg:hidden">
+            <label for="menu-items" class="btn btn-square btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block w-6 h-6 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
+          <nav class="flex-none hidden lg:block">
+            <ul class="menu menu-horizontal">
+              <!-- Navbar menu content here -->
+              <li><a class="text-lg">Projects</a></li>
+              <li><a class="text-lg">About</a></li>
+              <li><a class="text-lg">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <!-- Page content here -->
+        <main>
+          <!-- Hero -->
+          <section class="hero min-h-screen bg-base-200">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Hello there</h1>
+                <p class="py-6">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+            </div>
+          </section>
+          <!-- Skills -->
+          <!-- Projects -->
+          <section id="projects" class="container-auto py-8 px-14 space-y-6">
+            <h1 class="font-bold text-4xl text-center mb-16">
+              <span class="text-yellow-400">&lt;</span>
+              Projects
+              <span class="text-yellow-400">/&gt;</span>
+            </h1>
+          </section>
+          <!-- Contact -->
+        </main>
+
+        <footer></footer>
+      </div>
+
+      <aside class="drawer-side">
+        <label for="menu-items" class="drawer-overlay"></label>
+        <nav class="menu p-4 pt-16 w-80 h-full bg-base-200">
+          <ul class="space-y-2">
+            <li><a class="text-lg">Projects</a></li>
+            <li><a class="text-lg">About</a></li>
+            <li><a class="text-lg">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
+    <!-- Card template -->
+    <template id="card-template">
+      <div class="card lg:card-side bg-base-300 shadow-xl">
+        <figure class="">
+          <img data-id="image" class="object-cover" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-xl font-bold font-poppins" data-id="title">
+            Title
+          </h2>
+          <p class="mb-4" data-id="description">Description</p>
+          <div class="flex flex-row space-x-2 mb-6" data-id="stack"></div>
+          <div class="card-actions justify-end space-x-3">
+            <a data-id="repo" class="link link-info">Repo</a>
+            <a data-id="live" class="link link-info">Live</a>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>
