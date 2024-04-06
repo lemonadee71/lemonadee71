@@ -1,9 +1,3 @@
-# Hi :wave:
-
-I'm Shin, a web developer based in the Philippines.
-
-I am a licensed civil engineer but found my passion in web development. I was first introduced to programming during my first year then picked it up a semester later as a hobby because I thought it can help me improve my problem solving skills. I used what I learned to do some of my math homeworks. It was during the pandemic that I started studying programming seriously. I took CS50 then The Odin Project and here I am now. I specialize in JavaScript but has a solid foundation on front-end with experience on backend with Node.js.
-
 ## Skills
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
